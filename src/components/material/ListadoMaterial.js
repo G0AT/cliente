@@ -27,7 +27,7 @@ const ListadoTareas = () => {
 
     return ( 
         <Fragment>
-            <h2>Maletas: {maletaActual.nombre}</h2>
+            <h2>Usted ve: {maletaActual.nombre}</h2>
 
             <ul>
                 { materialesMaleta.length === 0 ?
@@ -53,7 +53,7 @@ const ListadoTareas = () => {
                 className="btn btn-eliminar"
                 onClick={onClickEliminar}
             >
-                Eliminar Maleta
+                Eliminar Grupo
             </button>
         </Fragment>
      );

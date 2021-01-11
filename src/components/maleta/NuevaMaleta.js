@@ -55,7 +55,7 @@ const NuevaMaleta = () => {
             className="btn btn-block btn-primario"
             onClick={onClickFormulario}
         >
-            Nueva Maleta
+            Nuevo Grupo
         </button>
 
         {formulario?

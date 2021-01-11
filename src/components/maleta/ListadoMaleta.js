@@ -23,7 +23,7 @@ const ListadoMaletas = () => {
     }, [mensaje]);
 
     //Validar existencia de productos
-    if(maletas.length === 0) return <p>No existen maletas, cree uno para comenzar</p>;
+    if(maletas.length === 0) return <p>No existen grupos, cree uno para comenzar</p>;
          
     //validación de si tiene contenido productos
     if(maletas.length === 0) return null;
