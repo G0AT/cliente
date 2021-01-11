@@ -40,7 +40,8 @@ const Material = ({material}) => {
     return ( 
         <li className="tarea sombra">
             <p>{material.nombre}</p>
-            <p>{material.cantidad}</p>
+            <p>{material.principal}</p>
+            <p>{material.subalmacen}</p>
             <p>{material.codigo}</p>
             <div className="estado">
                 {material.estado
