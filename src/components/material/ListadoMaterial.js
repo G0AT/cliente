@@ -1,4 +1,5 @@
 import React, {Fragment, useContext} from 'react';
+import HeaderMaterial from './HeaderMaterial';
 import Material from './Material';
 import maletaContext from '../../context/maletas/maletaContext';
 import materialContext from '../../context/material/materialContext';
@@ -32,20 +33,23 @@ const ListadoTareas = () => {
             <ul>
                 { materialesMaleta.length === 0 ?
                     (<li className="tarea"><p>No hay material</p></li>)
-                :
+                :   
+                <Fragment>
+                    <HeaderMaterial/>
                     <TransitionGroup>
                         {materialesMaleta.map (material=> (
                             <CSSTransition
                                 key={material._id}
                                 timeout={300}
                                 classNames="tarea"
-                            >
+                            >   
                                 <Material
                                     material={material}
                                 />
                             </CSSTransition>
                         ))}
                     </TransitionGroup>
+                </Fragment>
                 }
             </ul>
             <button

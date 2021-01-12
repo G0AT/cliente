@@ -37,46 +37,46 @@ const Material = ({material}) => {
         guardarMaterialActual(material);
     }
 
-    return ( 
-        <li className="tarea sombra">
-            <p>{material.nombre}</p>
-            <p>{material.principal}</p>
-            <p>{material.subalmacen}</p>
-            <p>{material.codigo}</p>
-            <div className="estado">
-                {material.estado
-                ? (<button 
+    return (
+            <li className="tarea sombra">
+                <p>{material.nombre}</p>
+                <p>{material.principal}</p>
+                <p>{material.subalmacen}</p>
+                <p>{material.codigo}</p>
+                <div className="estado">
+                    {material.estado
+                    ? (<button 
+                            type="button" 
+                            className="completo"
+                            onClick={() => cambiarEstado(material)}
+                        >
+                            Vigente
+                        </button>)
+                    : (<button 
+                            type="button" 
+                            className="incompleto"
+                            onClick={() => cambiarEstado(material)}
+                        >
+                            Descontinuado
+                        </button>)
+                }
+                </div>
+                <div className="acciones">
+                    <button 
                         type="button" 
-                        className="completo"
-                        onClick={() => cambiarEstado(material)}
+                        className="btn btn-primario"
+                        onClick={()=> seleccionarMaterial(material)}
                     >
-                        Vigente
-                    </button>)
-                : (<button 
-                        type="button" 
-                        className="incompleto"
-                        onClick={() => cambiarEstado(material)}
-                    >
-                        Descontinuado
-                    </button>)
-            }
-            </div>
-            <div className="acciones">
-                <button 
-                    type="button" 
-                    className="btn btn-primario"
-                    onClick={()=> seleccionarMaterial(material)}
-                >
-                    Editar
-                </button>
-                
-                <button
-                    type="button"
-                    className="btn btn-secundario"
-                    onClick={() => materialEliminar(material._id)}
-                >Eliminar</button>
-            </div>
-        </li>
+                        Editar
+                    </button>
+                    
+                    <button
+                        type="button"
+                        className="btn btn-secundario"
+                        onClick={() => materialEliminar(material._id)}
+                    >Eliminar</button>
+                </div>
+            </li>
      );
 }
  

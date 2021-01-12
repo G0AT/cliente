@@ -32,14 +32,15 @@ const FormTareas = () => {
                 codigo: ''
             })
         }
-    }, [materialSeleccionado])
+    }, [materialSeleccionado]);
+
     //state del formulario
     const [material, guardarMaterial]= useState({
         nombre: '',
         principal: '',
         subalmacen: '',
         codigo: ''
-    })
+    });
 
     //extraer el nombre de proyecto
     const {nombre, principal, subalmacen, codigo} = material;

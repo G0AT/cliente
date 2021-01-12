@@ -66,7 +66,7 @@ const NuevaMaleta = () => {
                     <input 
                         type="text"
                         className="input-text"
-                        placeholder="Nombre Maleta"
+                        placeholder="Nombre Grupo"
                         name="nombre"
                         value={nombre}
                         onChange={onchangeMaleta}
@@ -74,7 +74,7 @@ const NuevaMaleta = () => {
                     <input 
                         type="submit"
                         className="btn btn-block btn-primario"
-                        value="Agregar Maleta"
+                        value="Agregar Grupo"
                         onSubmit={onSubmitMaleta}
                     />
             </form>

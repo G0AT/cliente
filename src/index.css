@@ -199,13 +199,20 @@ aside  {
   align-items: center;
   margin-bottom: 1rem;
   border-radius: .5rem;
-
+  text-align: center;
 }
+
+.cabecera {
+  background-color: rgba(154, 252, 154, .3);
+  border: solid 2px;
+}
+
 .sombra {
   -webkit-box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
   -moz-box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
   box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
 }
+
 .sombra-dark {
   -webkit-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
   -moz-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
